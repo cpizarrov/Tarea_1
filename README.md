@@ -1,8 +1,6 @@
-===========
-# Clasificador de Propinas para Viajes en Taxi en NYC (2020)
+## Clasificador de Propinas para Viajes en Taxi en NYC (2020)
 
 Inspirado en la charla ["Keeping up with Machine Learning in Production"](https://github.com/shreyashankar/debugging-ml-talk) de [Shreya Shankar](https://twitter.com/sh_reya)
-===========
 
 Este proyecto muestra la construcción de un modelo de machine learning de juguete, usando datos de viajes de los taxis amarillos de Nueva York para el año 2020, [proporcionados por la NYC Taxi and Limousine Commission (TLC)](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
@@ -14,21 +12,22 @@ Para ello ajustaremos un modelo de classificación binaria RandomForest usando l
 
 ===========
 
-# ¿Cómo ejecutarlo? 
+## ¿Cómo ejecutarlo? 
 
 A continuación te detallamos las instrucciones para ejecutar el modelo. 
 
-## 1. Clona el repositorio utilizando git clone: 
-
+### 1. Clona el repositorio utilizando git clone: 
 ```
 !git clone https://github.com/cpizarrov/Tarea_1.git
+```
 
-## 2. Asegúrate de establecer tu directorio de trabajo en 'content/Tarea_1'
-
+### 2. Asegúrate de establecer tu directorio de trabajo en 'content/Tarea_1': 
 ```
 %cd /content/Tarea_1
+```
 
-## 3. Instala los requerimientos
+### 3. Instala los requerimientos
 
 ```
 !pip install -r /content/Tarea_1/requirements.txt
+```
