@@ -11,6 +11,7 @@ Para ello ajustaremos un modelo de classificación binaria RandomForest usando l
 ## ¿Cómo ejecutarlo? 
 
 A continuación te detallamos las instrucciones para ejecutar el modelo. 
+También te dejamos una [planilla](https://colab.research.google.com/drive/1Aj5NaEK2j8UU_7mixX6fj6o45T8VfBS2?usp=sharing) que puedes ejecutar en Google Drive. 
 
 ### 1. Clona el repositorio utilizando git clone: 
 ```
