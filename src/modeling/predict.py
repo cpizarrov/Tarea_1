@@ -17,12 +17,12 @@ def evaluate(pred_probs, y_true):
     return f1_score(y_true, pred_labels)
 
 def evaluate_months(model, df_full, year="2020"):
-    df_full["tpep_pickup_datetime"] = pd.to_datetime(df_full["tpep_pickup_datetime"])
+    df_full["tpep_dropoff_datetime"] = pd.to_datetime(df_full["tpep_dropoff_datetime"])
 
     results = []
 
     for month in range(1, 13):
-        df_month = df_full[df_full["tpep_pickup_datetime"].dt.month == month]
+        df_month = df_full[df_full["tpep_dropoff_datetime"].dt.month == month]
 
         if df_month.empty:
             continue
