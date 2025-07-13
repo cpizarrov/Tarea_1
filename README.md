@@ -6,9 +6,7 @@ Este proyecto muestra la construcción de un modelo de machine learning de jugue
 
 La idea es encontrar aquellos viajes donde la propina dejada por el pasajero fue alta, es decir, mayor al 20% del costo del viaje.
 
-Para ello ajustaremos un modelo de classificación binaria RandomForest usando los datos de los viajes de enero de 2020. Probaremos el modelo resultante sobre los datos de los viajes de febrero de 2020. Compararemos el desempeño del modelo en ambos casos usando la métrica de [f1-score](https://en.wikipedia.org/wiki/F-score).
-
-**Este proyecto está construido para ser ejecutado en [Google Colab](https://colab.research.google.com/), al que podemos acceder de manera gratuita solo teniendo un usuario de Google (Gmail) y un navegador web. No es necesario instalar nada en el computador local.**
+Para ello ajustaremos un modelo de classificación binaria RandomForest usando los datos de los viajes de enero de 2020. Probaremos el modelo resultante sobre los datos de los viajes de febrero, marzo y abril del 2020. Compararemos el desempeño del modelo usando la métrica de [f1-score](https://en.wikipedia.org/wiki/F-score).
 
 ## ¿Cómo ejecutarlo? 
 
