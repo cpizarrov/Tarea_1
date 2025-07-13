@@ -8,7 +8,7 @@ def load_taxi_data() -> pd.DataFrame:
 def load_taxi_data_full(year="2020"):
     dfs = []
 
-    for month in range(1, 13):
+    for month in range(1, 5):
         month_str = f"{month:02d}" 
         url = f"https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_{year}-{month_str}.parquet"
         print(f" Cargando {url}")
