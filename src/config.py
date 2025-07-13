@@ -1,9 +1,4 @@
-## Parámetros
-features = numeric_feat + categorical_feat
-EPS = 1e-7
-target_col = "high_tip"
-
-## Construcción de features 
+## Definición de features 
 
 numeric_feat = [
     "pickup_weekday",
@@ -21,3 +16,9 @@ categorical_feat = [
     "DOLocationID",
     "RatecodeID",
 ]
+
+features = numeric_feat + categorical_feat
+
+## Parámetros
+EPS = 1e-7
+target_col = "high_tip"
