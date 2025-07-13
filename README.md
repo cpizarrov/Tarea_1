@@ -52,18 +52,18 @@ from src import (
 ```
 Cada una te servirá para realizar alguna tarea específica. En este caso: 
 
-* load_taxi_data: Realiza la carga cruda de datos que serán utilizados para el entrenamiento del modelo. En este caso corresponde a datos de enero del 2020. 
-* load_taxi_data_full: Realiza la carga cruda de datos en un período más extenso. Por ahora se encuentra limitado desde Enero hasta Abril de 2020. Esto servirá para testear y evaluar el rendimiento del modelo a lo largo del año. 
-* features: Contiene un listado de variables que formarán parte del entrenamiento del modelo. 
-* target_col: Define la variable objetivo. 
-* preprocess: Realiza la limpieza de los datos crudos. El dataframe resultante contiene sólo la variable objetivo y las características de entrada para el entrenamiento del modelo. 
-* train_model: Entrena y guarda el modelo. 
-* load_model: Carga el modelo entrenado. 
-* predict: Realiza las predicciones en base al modelo entrenado. 
-* evaluate: Retorna la métrica F1-Score que utilizaremos para evaluar el modelo. 
-* evaluate_months: Retorna la métrica F1-Score. En esta ocasión, se realiza la evaluación automática para varios meses definidos por el usuario. De esta forma, podemos monitorear el desempeño del modelo a lo largo de algún año. 
-* plot_casos: Permite generar un gráfico de barras para monitorear la cantidad de casos a nivel mensual. 
-* plot_f1score: Permite generar una gráfico de líneas para monitorear el F1-Score a nivel mensual. 
+- **load_taxi_data**: Realiza la carga cruda de datos que serán utilizados para el entrenamiento del modelo. En este caso corresponde a datos de enero del 2020. 
+- **load_taxi_data_full**: Realiza la carga cruda de datos en un período más extenso. Por ahora se encuentra limitado desde Enero hasta Abril de 2020. Esto servirá para testear y evaluar el rendimiento del modelo a lo largo del año. 
+- **features**: Contiene un listado de variables que formarán parte del entrenamiento del modelo. 
+- **target_col**: Define la variable objetivo. 
+- **preprocess**: Realiza la limpieza de los datos crudos. El dataframe resultante contiene sólo la variable objetivo y las características de entrada para el entrenamiento del modelo. 
+- **train_model**: Entrena y guarda el modelo. 
+- **load_model**: Carga el modelo entrenado. 
+- **predict**: Realiza las predicciones en base al modelo entrenado. 
+- **evaluate:** Retorna la métrica F1-Score que utilizaremos para evaluar el modelo. 
+- **evaluate_months**: Retorna la métrica F1-Score. En esta ocasión, se realiza la evaluación automática para varios meses definidos por el usuario. De esta forma, podemos monitorear el desempeño del modelo a lo largo de algún año. 
+- **plot_casos**: Permite generar un gráfico de barras para monitorear la cantidad de casos a nivel mensual. 
+- **plot_f1score**: Permite generar una gráfico de líneas para monitorear el F1-Score a nivel mensual. 
 
 
 ### 4. Carga y procesa los datos de entrenamiento (Enero 2020): 
@@ -79,7 +79,7 @@ df = preprocess(df, target_col)
 model = train_model(df[features], df[target_col])
 ```
 
-Si no deseas entrenarlo, recuerda que ya existe uno en el directorio /models
+Si no deseas entrenarlo, recuerda que ya existe uno en el directorio */models*
 
 ```
 model = load_model("models/random_forest.joblib")
@@ -108,7 +108,7 @@ results = evaluate_months(model, df=df_full, year="2020", start_month=1, end_mon
 
 ### 8. Grafica tus resultados! 
 
-Utiliza las funciones plot_f1score y plot_casos para visualizar tus resultados mes a mes. Puedes establer un nuevo directorio para guardar éstos resultados si así lo deseas:
+Utiliza las funciones *plot_f1score* y *plot_casos* para visualizar tus resultados mes a mes. Puedes establer un nuevo directorio para guardar éstos resultados si así lo deseas:
 
 ```
 plot_f1score(results, save_dir="reports/figures")
