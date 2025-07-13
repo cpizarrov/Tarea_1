@@ -17,3 +17,5 @@ def load_taxi_data_full(year="2020"):
 
     full_df = pd.concat(dfs, ignore_index=True)
     return full_df
+
+target_col = "high_tip"
