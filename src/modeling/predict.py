@@ -1,8 +1,8 @@
 import joblib
 import pandas as pd
 from sklearn.metrics import f1_score
-from src.features.build_features import preprocess, features
-from src.data.dataset import load_taxi_data_full, target_col
+from src.features.build_features import features
+from src.data.dataset import load_taxi_data_full, target_col, preprocess
 
 
 def load_model(path="models/random_forest.joblib"):
