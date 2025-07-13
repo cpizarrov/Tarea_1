@@ -10,8 +10,6 @@ Para ello ajustaremos un modelo de classificación binaria RandomForest usando l
 
 **Este proyecto está construido para ser ejecutado en [Google Colab](https://colab.research.google.com/), al que podemos acceder de manera gratuita solo teniendo un usuario de Google (Gmail) y un navegador web. No es necesario instalar nada en el computador local.**
 
-===========
-
 ## ¿Cómo ejecutarlo? 
 
 A continuación te detallamos las instrucciones para ejecutar el modelo. 
