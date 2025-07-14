@@ -18,6 +18,7 @@ def evaluate(pred_probs, y_true):
 def evaluate_months(model, df, year="2020", start_month=1, end_month=12):
     df = df.copy()
     df["tpep_dropoff_datetime"] = pd.to_datetime(df["tpep_dropoff_datetime"])
+    df = df[df["tpep_dropoff_datetime"].dt.year == int(year)]
 
     results = []
 
